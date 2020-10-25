@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog.apps.BlogConfig',
+    'lenta.apps.LentaConfig',
+    'account.apps.AccountConfig',
 ]
 
 MIDDLEWARE = [
@@ -119,3 +122,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
+
+AUTH_USER_MODEL = 'account.Account'
